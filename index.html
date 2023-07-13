@@ -23,7 +23,7 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    <i class='bx bxs-watch nav__logo-icon'></i> Shoes
+                    <box-icon name='current-location'></box-icon></i> Shoes
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
@@ -39,6 +39,9 @@
                         </li>
                         <li class="nav__item">
                             <a href="#new" class="nav__link">New</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">contact</a>
                         </li>
                     </ul>
 
@@ -486,7 +489,7 @@
             </section>
 
             <!--==================== NEWSLETTER ====================-->
-            <section class="newsletter section container">
+            <section class="newsletter section container" id="contact">
                 <div class="newsletter__bg grid">
                     <div>
                         <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
@@ -495,13 +498,29 @@
                             newsletter to get the best offers, discounts, coupons, 
                             gifts and much more.
                         </p>
-                    </div>
 
-                    <form action="" class="newsletter__subscribe">
-                        <input type="email" placeholder="Enter your email" class="newsletter__input">
-                        <button class="button">
-                            SUBSCRIBE
-                        </button>
+                        <div action="" class="newsletter__subscribe">
+                            <input type="email" placeholder="Enter your email" class="newsletter__input">
+                            <button class="button">
+                                SUBSCRIBE
+                            </button>
+                        </div>
+                    </div>
+                    <form action="" class="newsletter__contact" id="contact-form">
+                        <div class="contact__form">
+                            <label for="" class="contact__form-title">Names</label>
+                            <input type="text" name="user_name" required placeholder="write your names" class="contact__form-input" id="contact-name">
+                        </div>
+                        <div class="contact__form">
+                            <label for="" class="contact__form-title">Email</label>
+                            <input type="text" name="user_email"required placeholder="write your email" class="contact__form-input" id="contact-email">
+                        </div>
+                        <div class="contact__form contact-form-new">
+                            <label for="" class="contact__form-title">message</label>
+                            <textarea name="" class="contact__form-message" id="contact-idea" cols="30" rows="10"></textarea>
+                        </div>
+                        <p class="contact__message" id="contact-message"></p>
+                        <button type="submit" class="contact__button">submit</button>
                     </form>
                 </div>
             </section>
